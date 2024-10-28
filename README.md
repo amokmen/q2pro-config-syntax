@@ -37,7 +37,7 @@ This extension provides only basic [Syntax Highlighting](https://code.visualstud
 
 Should work with any VS Code *theme* (see [Known Issues](#known-issues)).
 
-Example for *VS Code default dark+ theme*:
+Example for *VS Code default dark theme*:
 
 ![Screenshot for VS Code default dark+ theme](screenshots/vscode_default_dark.png)
 

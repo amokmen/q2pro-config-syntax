@@ -3,7 +3,7 @@
   "name": "quake2-config-syntax",
   "displayName": "Quake II Syntax Highlighting",
   "description": "Syntax highlighting for Quake 2 configuration files",
-  "version": "0.1.14",
+  "version": "0.1.16",
   "icon": "logo/icon256_q2cfg.png",
   "license": "GPL-3.0",
   "publisher": "amokmen",
