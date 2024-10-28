@@ -1,0 +1,4 @@
+{
+  "key": "Ctrl+Alt+Windows+i",
+  "command": "editor.action.inspectTMScopes"
+}

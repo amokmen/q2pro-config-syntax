@@ -1,0 +1,273 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "scopeName": "source.q2config",
+  "patterns": [
+    {
+      "include": "#keyboard-keys"
+    },
+    {
+      "include": "#commands"
+    },
+    {
+      "include": "#cvars"
+    },
+    {
+      "include": "#client-macros"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#strings-single"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#special-symbols"
+    },
+    {
+      "include": "#useable-items"
+    }
+  ],
+  "repository": {
+    "cvars": {
+      "patterns": [
+        {
+          "name": "variable.q2config.cvars.engine.q2pro",
+          "match": "\\$?\\b(adr0|adr1|adr10|adr11|adr12|adr13|adr14|adr15|adr2|adr3|adr4|adr5|adr6|adr7|adr8|adr9|al_device|allow_download|allow_download_maps|allow_download_models|allow_download_others|allow_download_pics|allow_download_players|allow_download_sounds|allow_download_textures|basedir|ch_alpha|ch_blue|cheats|ch_green|ch_health|ch_red|ch_scale|ch_x|ch_y|cl_adjustfov|cl_anglespeedkey|cl_async|cl_autopause|cl_batchcmds|cl_beginmapcmd|cl_blend|cl_changemapcmd|cl_chat_filter|cl_chat_notify|cl_chat_sound|cl_demomsglen|cl_demosnaps|cl_demosuspendtoggle|cl_demowait|cl_disable_explosions|cl_disable_particles|cl_disconnectcmd|cl_dlight_hacks|cl_entities|cl_footsteps|cl_forwardspeed|cl_fuzzhack|cl_gibs|cl_gun|cl_gunalpha|cl_gunfov|cl_gun_x|cl_gun_y|cl_gun_z|cl_http_blocking_timeout|cl_http_debug|cl_http_default_url|cl_http_downloads|cl_http_filelists|cl_http_insecure|cl_http_max_connections|cl_http_proxy|cl_ignore_stufftext|cl_instantpacket|cl_kickangles|cl_lights|cl_maxfps|cl_maxpackets|cl_nodelta|cl_noglow|cl_nolerp|cl_noskins|cl_packetdup|cl_particles|cl_paused|cl_pitchspeed|cl_predict|cl_protocol|cl_railcore_color|cl_railcore_width|cl_railspiral_color|cl_railspiral_radius|cl_railtrail_time|cl_railtrail_type|cl_rollhack|cl_run|cl_running|cl_showmiss|cl_shownet|cl_showpackets|cl_sidespeed|cl_stats|cl_testblend|cl_testentities|cl_testlights|cl_testparticles|cl_thirdperson|cl_thirdperson_angle|cl_thirdperson_range|cl_timeout|cl_updaterate|cl_upspeed|cl_vwep|cl_warn_on_fps_rounding|cl_yawspeed|com_completion_mode|com_completion_treshold|com_date_format|com_debug_break|com_fatal_error|com_time_format|con_alpha|con_auto_chat|con_background|con_clock|con_font|con_height|con_history|con_notifylines|con_notifytime|con_scale|con_scroll|console_prefix|con_timestamps|con_timestampscolor|con_timestampsformat|coop|crosshair|deathmatch|dedicated|developer|dmflags|fixedtime|fov|fraglimit|freelook|fs_autoexec|fs_debug|game|gender|gender_auto|g_features|gl_allow_software|gl_anisotropy|gl_bilerp_chars|gl_bilerp_pics|gl_brightness|gl_celshading|gl_clear|gl_colorbits|gl_coloredlightmaps|gl_cull_models|gl_cull_nodes|gl_debug|gl_depthbits|gl_dlight_falloff|gl_dotshading|gl_doublelight_entities|gl_downsample_skins|gl_drawentities|gl_drawsky|gl_drawworld|gl_dynamic|gl_finish|gl_fontshadow|gl_gamma_scale_pics|gl_hash_faces|gl_invert|gl_lightmap|gl_lockpvs|gl_modulate|gl_modulate_entities|gl_modulate_world|gl_multisamples|gl_nobind|gl_noscrap|gl_novis|gl_partscale|gl_partshape|gl_partstyle|gl_picmip|gl_polyblend|gl_round_down|gl_saturation|gl_screenshot_async|gl_screenshot_compression|gl_screenshot_format|gl_screenshot_quality|gl_screenshot_template|gl_shaders|gl_shadows|gl_showerrors|gl_showorigins|gl_showscrap|gl_showstats|gl_showtearing|gl_showtris|gl_stencilbits|gl_swapinterval|gl_test|gl_texturebits|gl_texturemode|gl_upscale_pcx|gl_vertexlight|gl_waterwarp|gl_znear|hand|homedir|hostname|host_speeds|hqx_cb|hqx_cr|hqx_y|in_enable|in_grab|intensity|libdir|loc_dist|loc_draw|loc_trace|logfile|logfile_flush|logfile_name|logfile_prefix|lookspring|lookstrafe|lrcon_password|m_accel|map_allsolid_bug|map_noareas|map_override_path|map_visibility_patch|m_autosens|maxclients|m_filter|m_forward|m_pitch|msg|m_side|mvd_buffer_size|mvd_password|mvd_shownet|mvd_snaps|mvd_suspend_time|mvd_timeout|mvd_username|mvd_wait_delay|mvd_wait_percent|m_yaw|name|net_chantype|net_clientport|net_dropsim|net_enable_ipv6|net_ignore_icmp|net_ip|net_ip6|net_log_enable|net_log_flush|net_log_name|net_maxmsglen|net_port|ogg_enable|ogg_shuffle|ogg_volume|password|protocol|public|qport|rate|rcon_address|rcon_password|r_fullbright|r_maxfps|r_override_textures|r_texture_formats|r_texture_overrides|s_ambient|s_auto_focus|scr_alpha|scr_centertime|scr_chathud|scr_chathud_lines|scr_chathud_time|scr_chathud_x|scr_chathud_y|scr_conspeed|scr_demobar|scr_draw2d|scr_font|scr_lag_draw|scr_lag_max|scr_lag_min|scr_lag_x|scr_lag_y|scr_scale|scr_showpause|scr_showpmove|scr_showstats|scr_showturtle|s_driver|s_enable|sensitivity|showclamp|showdrop|showpackets|s_khz|skill|skin|s_mixahead|spectator|s_show|s_swapstereo|s_testsound|s_underwater|s_underwater_gain_hf|sv_airaccelerate|sv_allow_map|sv_allow_nodelta|sv_allow_unconnected_cmds|sv_anticheat_badfile_action|sv_anticheat_badfile_max|sv_anticheat_badfile_message|sv_anticheat_client_disconnect_action|sv_anticheat_disable_play|sv_anticheat_error_action|sv_anticheat_message|sv_anticheat_required|sv_anticheat_server_address|sv_anticheat_show_violation_reason|sv_auth_limit|sv_calcpings_method|sv_changemapcmd|sv_cinematics|sv_debug|sv_downloadserver|sv_enforcetime|sv_enhanced_setplayer|sv_features|sv_force_reconnect|sv_fps|sv_ghostime|sv_idlekick|sv_iplimit|sv_lan_force_rate|sv_locked|sv_max_download_size|sv_max_packet_entities|sv_max_rate|sv_min_rate|sv_mvd_allow_stufftext|sv_mvd_autorecord|sv_mvd_begincmd|sv_mvd_bufsize|sv_mvd_capture_flags|sv_mvd_disconnect_time|sv_mvd_enable|sv_mvd_maxclients|sv_mvd_maxmaps|sv_mvd_maxsize|sv_mvd_maxtime|sv_mvd_noblend|sv_mvd_nogun|sv_mvd_nomsgs|sv_mvd_password|sv_mvd_scorecmd|sv_mvd_spawn_dummy|sv_mvd_suspend_time|sv_namechange_limit|sv_noreload|sv_novis|s_volume|sv_packetdup_hack|sv_pad_packets|sv_password|sv_paused|sv_qwmod|sv_rcon_limit|sv_recycle|sv_redirect_address|sv_reserved_password|sv_reserved_slots|sv_running|sv_show_name_changes|sv_status_limit|sv_status_show|sv_strafejump_hack|sv_timescale_kick|sv_timescale_time|sv_timescale_warn|sv_uptime|sv_waterjump_hack|sys_console|sys_disablecrashdump|sys_exitonerror|sys_forcegamelib|sys_parachute|sys_viewlog|timedemo|timelimit|timeout|timescale|uf|ui_colorservers|ui_debug|ui_listalldemos|ui_open|ui_pingrate|ui_scale|ui_sortdemos|ui_sortservers|version|vid_driver|vid_flip_on_switch|_vid_fullscreen|vid_fullscreen|vid_gamma|vid_geometry|vid_hwgamma|vid_modelist|vid_ref|viewsize|win_alwaysontop|win_disablewinkey|win_noalttab|win_noborder|win_noresize|win_notitle|zombietime|z_perturb)\\b(?=\\s)"
+        },
+        {
+          "name": "variable.q2config.cvars.game.q2pro",
+          "match": "\\$?\\b(bob_pitch|bob_roll|bob_up|cheats|coop|deathmatch|dedicated|dmflags|filterban|flood_msgs|flood_persecond|flood_waitdelay|fraglimit|game|gamedate|gamename|g_select_empty|gun_x|gun_y|gun_z|maxclients|maxentities|maxspectators|needpass|password|run_pitch|run_roll|skill|spectator_password|sv_features|sv_gravity|sv_maplist|sv_maxvelocity|sv_rollangle|sv_rollspeed|timelimit)\\b(?=\\s)"
+        },
+        {
+          "name": "variable.q2config.cvars.game.openffa",
+          "match": "\\$?\\b(basedir|bob_pitch|bob_roll|bob_up|cheats|dedicated|dmflags|flood_infodelay|flood_infos|flood_msgs|flood_perinfo|flood_persecond|flood_perwave|flood_waitdelay|flood_wavedelay|flood_waves|fraglimit|fs_gamedir|g_admin_password|g_bugs|g_countdown_time|g_defaults_file|g_highscores_dir|g_http_debug|g_http_interval|g_http_url|g_idle_kick|g_idle_time|g_intermission_time|g_item_ban|g_maps_file|g_maps_random|g_max_bullets|g_max_cells|g_max_grenades|g_max_health|g_max_rockets|g_max_shells|g_max_slugs|g_motd_file|g_mute_chat|g_protection_time|g_select_empty|g_skins_file|g_spawn_mode|g_sql_async|g_sql_database|g_start_armor|g_start_armortype|g_start_bullets|g_start_cells|g_start_grenades|g_start_health|g_start_rockets|g_start_shells|g_start_slugs|g_team_chat|g_teleporter_nofreeze|g_udp_cookie|g_udp_host|g_udp_port|g_vote_flags|g_vote_limit|g_vote_mask|g_vote_time|g_vote_treshold|g_warmup|g_weapon_have|g_weapon_initial|gamedate|gamedir|gamename|gun_x|gun_y|gun_z|hostname|maxclients|maxentities|revision|run_pitch|run_roll|sv_features|sv_fps|sv_gravity|sv_maxvelocity|sv_rollangle|sv_rollspeed|time_remaining|timelimit)\\b(?=\\s)"
+        },
+        {
+          "name": "variable.q2config.cvars.game.opentdm",
+          "match": "\\$?\\b(basedir|bob_pitch|bob_roll|bob_up|cheats|coop|deathmatch|dedicated|dmflags|filterban|flood_msgs|flood_persecond|flood_waitdelay|flood_waves|flood_waves_perminute|flood_waves_waitdelay|fraglimit|g_1v1_spawn_mode|g_1v1_timeout|g_1v1flags|g_admin_password|g_admin_vote_decide|g_allow_name_change_during_match|g_allow_vote_config|g_auto_rejoin_map|g_auto_rejoin_match|g_bugs|g_chat_mode|g_command_mask|g_debug_spawns|g_fast_weap_switch|g_features|g_force_record|g_force_screenshot|g_gamemode|g_http_bind|g_http_debug|g_http_domain|g_http_enabled|g_http_path|g_http_proxy|g_idle_time|g_intermission_time|g_itdmflags|g_itemflags|g_locked_names|g_locked_skins|g_maplistfile|g_match_countdown|g_match_time|g_max_players_per_team|g_max_timeout|g_overtime|g_powerupflags|g_respawn_time|g_select_empty|g_tdm_allow_pick|g_tdm_spawn_mode|g_tdmflags|g_team_a_name|g_team_a_skin|g_team_b_name|g_team_b_skin|g_teleporter_nofreeze|g_tie_mode|g_vote_mask|g_vote_time|gamedate|gamename|gun_x|gun_y|gun_z|maxclients|maxentities|maxspectators|password|revision|run_pitch|run_roll|skill|spectator_password|sv_features|sv_fps|sv_gravity|sv_maplist|sv_maxvelocity|sv_new_entflags|sv_reserved_slots|sv_rollangle|sv_rollspeed|timelimit)\\b(?=\\s)"
+        },
+        {
+          "name": "variable.q2config.cvars.game.yamagi-ctf",
+          "match": "\\$?\\b(admin_password|aimfix|allow_admin|bob_pitch|bob_roll|bob_up|capturelimit|cheats|cl_gun|competition|coop|ctf|ctf_forcejoin|deathmatch|dedicated|dmflags|electpercentage|filterban|flood_msgs|flood_persecond|flood_waitdelay|fraglimit|g_select_empty|game|gamedate|gamename|gun_x|gun_y|gun_z|instantweap|matchlock|matchsetuptime|matchstarttime|matchtime|maxclients|maxentities|password|run_pitch|run_roll|skill|sv_gravity|sv_maplist|sv_maxvelocity|sv_rollangle|sv_rollspeed|timelimit|warn_unbalanced|warp_list)\\b(?=\\s)"
+        },
+        {
+          "name": "variable.q2config.cvars.game.yamagi-3zb2",
+          "match": "\\$?\\b(autospawn|bob_pitch|bob_roll|bob_up|botlist|capturelimit|cheats|chedit|coop|deathmatch|dedicated|dmflags|filterban|fraglimit|g_select_empty|game|gamedate|gamename|gun_x|gun_y|gun_z|maplist|maxclients|maxentities|maxspectators|password|run_pitch|run_roll|skill|spectator_password|sv_gravity|sv_maxvelocity|sv_rollangle|sv_rollspeed|timelimit|vwep|zigmode)\\b(?=\\s)"
+        },
+        {
+          "name": "variable.q2config.cvars.unsorted.yamagi-quake2",
+          "match": "\\$?\\b(aimfix|busywait|cl_maxfps|cl_async|cl_http_downloads|cl_http_filelists|cl_http_max_connections|cl_http_proxy|cl_http_show_dw_progress|cl_http_bw_limit_rate|cl_http_bw_limit_tmout|cl_kickangles|cl_limitsparksounds|cl_loadpaused|cl_unpaused_scvis|cl_r1q2_lightstyle|cl_showfps|cl_model_preview_start|cl_model_preview_end|in_grab|singleplayer|coop_pickup_weapons|coop_elevator_delay|coop_baseq2|g_commanderbody_nogod|g_footsteps|g_monsterfootsteps|g_fix_triggered|g_machinegun_norecoil|g_disruptor|nextdemo|nextserver|al_device|al_driver|ogg_enable|ogg_ignoretrack0|s_doppler|s_openal|s_underwater|s_occlusion_strength|s_reverb_preset|cl_audiopaused|cin_force43|r_gunfov|horplus|r_consolescale|r_hudscale|r_menuscale|crosshair_scale|r_customheight|r_customwidth|r_farsee|r_fixsurfsky|r_vsync|r_anisotropic|r_msaa_samples|r_videos_unfiltered|r_2D_unfiltered|r_lerp_list|r_nolerp_list|r_retexturing|r_scale8bittextures|r_shadows|vid_displayrefreshrate|vid_maxfps|vid_renderer|gl_zfix|gl1_intensity|gl1_overbrightbits|gl1_particle_square|gl1_stencilshadow|gl3_debugcontext|gl3_intensity|gl3_intensity_2D|gl3_overbrightbits|gl3_particle_size|gl3_particle_fade_factor|gl3_particle_square|gl3_colorlight|gl3_usefbo|sw_gunzposition|sw_colorlight|in_initjoy|in_sdlbackbutton|joy_layout|joy_left_deadzone|joy_right_deadzone|joy_left_snapaxis|joy_right_snapaxis|joy_left_expo|joy_right_expo|joy_flick_threshold|joy_flick_smoothed|gyro_mode|gyro_turning_axis|gyro_calibration_x|gyro_calibration_y|gyro_calibration_z|joy_haptic_magnitude|joy_haptic_filter|joy_haptic_distance|s_feedback_kind)\\b(?=\\s)"
+        },
+        {
+          "name": "variable.q2config.cvars.engine.vanilla",
+          "match": "\\$?\\b(adr0|adr1|adr2|adr3|adr4|adr5|adr6|adr7|adr8|allow_download|allow_download_maps|allow_download_models|allow_download_players|allow_download_sounds|basedir|bob_pitch|bob_roll|bob_up|cddir|cd_loopcount|cd_looptrack|cd_nocd|cheats|cl_anglespeedkey|cl_autoskins|cl_blend|cl_entities|cl_footsteps|cl_forwardspeed|cl_gun|cl_lights|cl_maxfps|cl_nodelta|cl_noskins|cl_particles|cl_pitchspeed|cl_predict|cl_run|cl_showmiss|cl_shownet|cl_sidespeed|cl_stats|cl_stereo|cl_stereo_separation|cl_testblend|cl_testentities|cl_testlights|cl_testparticles|cl_timeout|cl_upspeed|cl_vwep|cl_yawspeed|con_notifytime|coop|crosshair|deathmatch|debuggraph|dedicated|developer|dmflags|filterban|fixedtime|flood_msgs|flood_persecond|flood_waitdelay|fov|fraglimit|freelook|game|gamedate|gamename|gender|gender_auto|gl_3dlabs_broken|gl_allow_software|gl_bitdepth|gl_clear|gl_cull|gl_drawbuffer|gl_driver|gl_dynamic|gl_ext_compiled_vertex_array|gl_ext_multitexture|gl_ext_palettedtexture|gl_ext_pointparameters|gl_ext_swapinterval|gl_finish|gl_flashblend|gl_lightmap|gl_lockpvs|gl_log|gl_mode|gl_modulate|gl_monolightmap|gl_nobind|gl_nosubimage|gl_particle_att_a|gl_particle_att_b|gl_particle_att_c|gl_particle_max_size|gl_particle_min_size|gl_particle_size|gl_picmip|gl_playermip|gl_polyblend|gl_round_down|gl_saturatelighting|gl_shadows|gl_showtris|gl_skymip|gl_swapinterval|gl_texturealphamode|gl_texturemode|gl_texturesolidmode|gl_vertex_arrays|gl_ztrick|graphheight|graphscale|graphshift|g_select_empty|gun_x|gun_y|gun_z|hand|hostname|host_speeds|in_initjoy|in_initmouse|in_joystick|in_mouse|intensity|joy_advanced|joy_advaxisr|joy_advaxisu|joy_advaxisv|joy_advaxisx|joy_advaxisy|joy_advaxisz|joy_forwardsensitivity|joy_forwardthreshold|joy_name|joy_pitchsensitivity|joy_pitchthreshold|joy_sidesensitivity|joy_sidethreshold|joy_upsensitivity|joy_upthreshold|joy_yawsensitivity|joy_yawthreshold|logfile|log_stats|lookspring|lookstrafe|map_noareas|maxclients|maxentities|maxspectators|m_filter|m_forward|m_pitch|msg|m_side|m_yaw|name|needpass|netgraph|net_shownet|noipx|noudp|password|paused|protocol|public|qport|rate|rcon_address|rcon_password|r_drawentities|r_drawworld|r_fullbright|r_lerpmodels|r_lightlevel|r_nocull|r_norefresh|r_novis|r_speeds|run_pitch|run_roll|scr_centertime|scr_conspeed|scr_drawall|scr_printspeed|scr_showpause|scr_showturtle|sensitivity|showclamp|showdrop|showpackets|showtrace|s_initsound|s_khz|skill|skin|s_loadas8bit|s_mixahead|spectator|spectator_password|s_primary|s_show|s_testsound|sv_airaccelerate|sv_enforcetime|sv_gravity|sv_maplist|sv_maxvelocity|sv_noreload|s_volume|sv_reconnect_limit|sv_rollangle|sv_rollspeed|sw_allow_modex|s_wavonly|sw_mode|sw_stipplealpha|timedemo|timegraph|timelimit|timeout|timescale|v_centermove|v_centerspeed|version|vid_fullscreen|vid_gamma|vid_ref|vid_xpos|vid_ypos|viewsize|win_noalttab|zombietime)\\b(?=\\s)"
+        },
+        {
+          "name": "variable.q2config.cvars.unsorted.q2enhanced",
+          "match": "\\$?\\b(aa_adhesion_contributionpercentmax|aa_adhesion_innterradiusrolloffpercent|aa_adhesion_optimalradius|aa_adhesion_pitchspeedmax|aa_adhesion_radius|aa_adhesion_yawspeedmax|aa_allowinterpolate|aa_debugselector|aa_distance_expandradiusdistmax|aa_distance_expandradiusdistmin|aa_distance_expandradiusmultiplier|aa_distance_max|aa_distance_min|aa_distance_rampdown|aa_distance_rampup|aa_enable|aa_friction_innterradiusrolloffpct|aa_friction_multipliermax|aa_friction_multipliermin|aa_friction_optimalradius|aa_friction_radius|aa_interpolaterate|aa_selection_maxdegrees|aa_selection_maxdistance|allow_download|allow_download_maps|allow_download_models|allow_download_players|allow_download_sounds|autoshield_0|autoshield_1|autoshield_2|autoshield_3|autoshield_4|autoshield_5|autoshield_6|autoshield_7|autoswitch_0|autoswitch_1|autoswitch_2|autoswitch_3|autoswitch_4|autoswitch_5|autoswitch_6|autoswitch_7|basedir|bobskip_0|bobskip_1|bobskip_2|bobskip_3|bobskip_4|bobskip_5|bobskip_6|bobskip_7|bot_aim_debug|bot_aim_disabled|bot_aim_instant|bot_assertOnce|bot_attackHumansOnly|bot_chat_disable|bot_combatDisabled|bot_compassMoveTest|bot_crouch_force|bot_debugSystem|bot_debug_notarget|bot_drawNavNodes|bot_entityDebug|bot_followPlayer|bot_game_debug|bot_input_disable|bot_jump_disable|bot_meleeAttack|bot_meleeDisabled|bot_minClients|bot_move_debug|bot_move_disable|bot_navNodeGoal|bot_numBots|bot_num_debug|bot_pathTest|bot_pause|bot_respawnTime|bot_senses_disabled|bot_showBots|bot_showPaths|bot_showUnreachableItems|bot_skill|bot_testRandomPaths|bot_trackPlayer|bot_weapons_disable|cc_debug|cc_enable|cc_minimumtime|cc_size|cd_loopcount|cd_looptrack|cd_nocd|cddir|cheats|cl_anglespeedkey|cl_attract_loop|cl_autodemos|cl_autoskins|cl_blend|cl_cin_nonblocking|cl_edgeAccelerationScalar|cl_edgeAccelerationThreshold|cl_engineFPS|cl_engineHZ|cl_engineNoSleep|cl_entities|cl_footsteps|cl_forwardspeed|cl_gun|cl_gyroSensitivityX|cl_gyroSensitivityY|cl_helppathtime|cl_interpolation|cl_joyAccelerationSmoothing|cl_joyAccelerationSpeed|cl_joyApplyPitchAcceleration|cl_joyClampMinTurnLook|cl_joyConvertTurnToSquare|cl_joyLogCurve|cl_joyLogarithmicAccelerationThreshold|cl_joyinvertlook|cl_joylookspeed_x|cl_joylookspeed_y|cl_joymovesensitivity|cl_joysmoothing|cl_lights|cl_maxlatetics|cl_mousesmooth|cl_muzzleflashes|cl_nocin|cl_nodelta|cl_noskins|cl_packetfps|cl_particles|cl_pitchspeed|cl_predict|cl_run_0|cl_run_1|cl_run_2|cl_run_3|cl_run_4|cl_run_5|cl_run_6|cl_run_7|cl_saveScreenshotUserDirectory|cl_saveScreenshotsAsJPEG|cl_showmiss|cl_shownet|cl_shownet_minsize|cl_sidespeed|cl_skipCrossHair|cl_skipHud|cl_stats|cl_swapjoysticks|cl_testblend|cl_testentities|cl_testlights|cl_testparticles|cl_timeout|cl_updateCPUUsageFrequency|cl_upspeed|cl_usegyros|cl_vwep|cl_yawspeed|con_alwaysShowConsole|con_fontsize|con_lockout|con_scrollamount|con_showfps|con_statfontsize|config_version|coop|crosshair_0|crosshair_1|crosshair_2|crosshair_3|crosshair_4|crosshair_5|crosshair_6|crosshair_7|crosshairalpha_0|crosshairalpha_1|crosshairalpha_2|crosshairalpha_3|crosshairalpha_4|crosshairalpha_5|crosshairalpha_6|crosshairalpha_7|crosshaircolor_0|crosshaircolor_1|crosshaircolor_2|crosshaircolor_3|crosshaircolor_4|crosshaircolor_5|crosshaircolor_6|crosshaircolor_7|crosshairscale_0|crosshairscale_1|crosshairscale_2|crosshairscale_3|crosshairscale_4|crosshairscale_5|crosshairscale_6|crosshairscale_7|d3d11_adapter|d3d11_compileShaders|d3d11_noAltEnter|deathmatch|debug_menu|debuggraph|dedicated|developer|dogtag_0|dogtag_1|dogtag_2|dogtag_3|dogtag_4|dogtag_5|dogtag_6|dogtag_7|fixedtime|fov_0|fov_1|fov_2|fov_3|fov_4|fov_5|fov_6|fov_7|fraglimit|freelook|fs_noloose|g_debuglocalization|g_drawWalkPath|g_language|g_nativeMouse|g_showClosestNavNode|g_showEnts|g_showMonsters|g_showRuler|g_showSpawnPoints|g_showSpeed|g_showintromovie|g_sys_language|g_vibration|g_vibrationVolume|game|graphheight|graphscale|graphshift|hand_0|hand_1|hand_2|hand_3|hand_4|hand_5|hand_6|hand_7|host_speeds|hostname|hsensitivity|imgui_scale|in_joystick_laxisdeadzone|in_joystick_lookaxis|in_joystick_lookinvert|in_joystick_raxisdeadzone|in_joystick_strafeaxis|in_joystick_strafeinvert|in_joystick_xaxis|in_joystick_xinvert|in_joystick_yaxis|in_joystick_yinvert|in_nojoy|in_profilejoybuttons|in_skipplayerone|jobs_concurrentThreads|jobs_enable|joy_lookScale_0|joy_lookScale_1|joy_lookScale_2|joy_lookScale_3|joy_lookScale_4|joy_lookScale_5|joy_lookScale_6|joy_lookScale_7|joy_pitchScale_0|joy_pitchScale_1|joy_pitchScale_2|joy_pitchScale_3|joy_pitchScale_4|joy_pitchScale_5|joy_pitchScale_6|joy_pitchScale_7|kf_basepath|log_stats|logfile|lookspring|lookstrafe|m_forward|m_pitch|m_side|m_yaw|maxclients|msg|name_0|name_1|name_2|name_3|name_4|name_5|name_6|name_7|navEdit_autoConnectNodes|navEdit_checkGeoBBoxWidth|navEdit_defaultNodeRadius|navEdit_inWaterLookPointDist|navEdit_nodeDrawDist|navEdit_onlyTraceAgainstWorld|navEdit_playSounds|navEdit_postConnectToNodeAction|navEdit_removeGodModeOnExit|navEdit_removeNoClipOnExit|navEdit_removeNoTargetOnExit|navEdit_showLinkType|navEdit_skipLookPointValidation|navEdit_skipValidation|navEdit_updateSourceHistoryOnConnectionChange|navEdit_verifyNodeVisibility|nav_edit|nav_heuristic_xpos|nav_heuristic_ypos|nav_legend_xpos|nav_legend_ypos|nav_properties_xpos|nav_properties_ypos|net_crossplay|net_directconn|net_nerdstats|net_voip|net_voipmic|net_voipptt|netgraph|noudp|numsplit|password|paused|playfab_lognetwork|playfab_narration|playfab_speechtotext|playfab_synthtexttomic|playfab_synthvoicetype|protocol|public|pw_screen_frac_x|pw_screen_frac_y|r_antialiasing|r_bloom|r_bloomBlurRadius|r_bloomThreshold|r_brightness|r_clear|r_clusterFrustumMaxZ|r_clusterFrustumMinZ|r_crt_brightboost|r_crt_hardPix|r_crt_hardScan|r_crt_maskDark|r_crt_maskLight|r_crt_scaleInLinearGamma|r_crt_shadowMask|r_crtmode|r_debugLineWidth|r_dlightPenaltyScale|r_dof|r_dofBlurRange|r_dofFocusDistance|r_dofFocusRange|r_drawEntities|r_drawEntityBounds|r_drawStaticShadowLights|r_drawTileFrustum|r_drawcells|r_enablefog|r_fontHinting|r_fov|r_fullbright|r_gamepadStyle|r_lightgrid|r_lockTileFrustum|r_maxocclusionunit|r_md5LODDistance|r_md5models|r_monochromelightmaps|r_motionBlur|r_motionBlurShutterSpeed|r_motionBlurVisualize|r_noEntityCastShadowList|r_notextures|r_particle_square|r_previewlightmap|r_previewpics|r_resolutionscale|r_resolutionscale_aggressive|r_resolutionscale_fixedscale_h|r_resolutionscale_fixedscale_w|r_resolutionscale_gooddrawtime|r_resolutionscale_increasespeed|r_resolutionscale_lowerspeed|r_resolutionscale_numframesbeforelowering|r_resolutionscale_numframesbeforeraising|r_resolutionscale_targetdrawtime|r_rhimaxanisotropic|r_rhirenderfamily|r_shadowcachelifetime|r_shadows|r_showBSPLightGrid|r_showBSPLightGridStyle|r_showMD5Skeletons|r_shownormals|r_showoverdraw|r_showshadowatlas|r_showtris|r_skipFog|r_skipUnderWaterFX|r_staticshadows|r_texture_filtering|r_underwater_magnitude|r_underwater_speed|r_underwater_spread|r_underwater_strips|r_verticalsplitscreen|rate|rcon_address|rcon_password|routeEdit_lookPointDist|routeEdit_playSounds|routeEdit_routeDrawDist|route_edit|s_bgvolume|s_initsound|s_khz|s_loadas8bit|s_primary|s_reverb_lerptime|s_show|s_testsound|s_use_reverb|scr_chat_alpha|scr_chat_time|scr_conspeed|scr_drawall|scr_hitmarkers|scr_safezone|scr_scale|scr_screenflashopacity|scr_showpause|scr_showturtle|scr_teammates|sensitivity|showclamp|showdrop|showpackets|showtrace|skill|skin_0|skin_1|skin_2|skin_3|skin_4|skin_5|skin_6|skin_7|snd_lowpasscutofffreq|snd_lowpassfilter|snd_lowpassgain|snd_mastervolume|snd_musicvolume|snd_speakermode|snd_voicelanguage|snd_voicevolume|snd_volume|spectator_0|spectator_1|spectator_2|spectator_3|spectator_4|spectator_5|spectator_6|spectator_7|sv_enforcetime|sv_noreload|sv_reconnect_limit|sv_tick_rate|sys_profileNumSignedIn|timedemo|timegraph|timelimit|timeout|timescale|udp_allowipv4|udp_allowipv6|ui_acc_alttypeface|ui_acc_contrast|ui_acc_firstlaunch|ui_creditspeed|ui_showfull|v_displaymonitor|v_displayrestart|v_height|v_refresh|v_vsync|v_width|v_windowXPos|v_windowYPos|v_windowmode|version|vk_assertOnValidationError|vk_compileShaders|vk_dumpMisCachedPipelineToFile|vk_enableDebugging|vk_uniform_buffer_granuarlity_multiplier|vk_waitOnCommandDuringPresentation|wc_screen_frac_y|wc_timeout|win_allowmanualaffinitymask|win_mdmpwithheap|win_numanode|ww_ammo_size|ww_arrow_offset|ww_controller_exit_timeout|ww_deadzone_timeout|ww_mouse_deadzone_speed|ww_mouse_sensitivity|ww_popout_amount|ww_popout_speed|ww_screen_frac_x|ww_screen_frac_y|ww_size|ww_timer_speed|ww_unavailable_shade_value|ww_underpic_nudge_amount|zombietime)\\b(?=\\s)"
+        }
+      ]
+    },
+    "keyboard-keys": {
+      "patterns": [
+        {
+          "name": "keyword.control.q2config.specialkeys.q2pro",
+          "match": "(?<=bind\\s)(?i:SEMICOLON|102ND|ALT|BACKSPACE|CAPSLOCK|CTRL|DEL|DOWNARROW|END|ENTER|ESCAPE|F1|F10|F11|F12|F2|F3|F4|F5|F6|F7|F8|F9|HOME|INS|KP_5|KP_DEL|KP_DOWNARROW|KP_END|KP_ENTER|KP_HOME|KP_INS|KP_LEFTARROW|KP_MINUS|KP_MULTIPLY|KP_PGDN|KP_PGUP|KP_PLUS|KP_RIGHTARROW|KP_SLASH|KP_UPARROW|LALT|LCTRL|LEFTARROW|LSHIFT|LWINKEY|MENU|MOUSE1|MOUSE2|MOUSE3|MOUSE4|MOUSE5|MOUSE6|MOUSE7|MOUSE8|MWHEELDOWN|MWHEELLEFT|MWHEELRIGHT|MWHEELUP|NUMLOCK|PAUSE|PGDN|PGUP|PRINTSCREEN|RALT|RCTRL|RIGHTARROW|RSHIFT|RWINKEY|SCROLLOCK|SHIFT|SPACE|TAB|UPARROW)(?=\\s)"
+        },
+        {
+          "name": "keyword.control.q2config.specialkeys.vanilla",
+          "match": "(?<=bind\\s)(?i:ALT|AUX1|AUX10|AUX11|AUX12|AUX13|AUX14|AUX15|AUX16|AUX17|AUX18|AUX19|AUX2|AUX20|AUX21|AUX22|AUX23|AUX24|AUX25|AUX26|AUX27|AUX28|AUX29|AUX3|AUX30|AUX31|AUX32|AUX4|AUX5|AUX6|AUX7|AUX8|AUX9|BACKSPACE|CTRL|DEL|DOWNARROW|END|ENTER|ESCAPE|F1|F10|F11|F12|F2|F3|F4|F5|F6|F7|F8|F9|HOME|INS|JOY1|JOY2|JOY3|JOY4|KP_5|KP_DEL|KP_DOWNARROW|KP_END|KP_ENTER|KP_HOME|KP_INS|KP_LEFTARROW|KP_MINUS|KP_PGDN|KP_PGUP|KP_PLUS|KP_RIGHTARROW|KP_SLASH|KP_UPARROW|LEFTARROW|MOUSE1|MOUSE2|MOUSE3|MWHEELDOWN|MWHEELUP|PAUSE|PGDN|PGUP|RIGHTARROW|SEMICOLON|SHIFT|SPACE|TAB|UPARROW)(?=\\s)"
+        },
+        {
+          "name": "keyword.control.q2config.usualkeys.vanilla",
+          "match": "(?<=bind\\s)([0-9]|[a-zA-Z]|`|-|=|;|'|,|\\.|\\[|\\]|\\\\|\\/)(?=\\s)"
+        },
+        {
+          "name": "keyword.control.q2config.specialkeys.q2enhanced",
+          "match": "(?<=bind\\s)(?i:LEFT_TRIGGER|RIGHT_TRIGGER|A_BUTTON|B_BUTTON|X_BUTTON|LEFT_STICK|RIGHT_STICK|LEFT_SHOULDER|RIGHT_SHOULDER|DPAD_UP|DPAD_LEFT|DPAD_RIGHT)(?=\\s)"
+        }
+      ]
+    },
+    "client-macros": {
+      "patterns": [
+        {
+          "name": "support.class.q2config.macros.q2pro",
+          "match": "\\$?\\b(cl_ammo|cl_armor|cl_demopos|cl_fps|cl_health|cl_lag|cl_mapname|cl_mps|cl_ping|cl_pps|cl_server|cl_timer|cl_ups|cl_weaponmodel|com_date|com_maplist|com_time|com_uptime|com_uptime_long|gl_viewcluster|loc_here|loc_there|net_dnrate|net_uprate|r_fps|random)\\b"
+        }
+      ]
+    },
+    "special-symbols": {
+      "patterns": [
+        {
+          "name": "constant.character.q2config",
+          "match": "(;|\\$|\\{|\\}|%)"
+        }
+      ]
+    },
+    "useable-items": {
+      "patterns": [
+        {
+          "name": "constant.character.q2config.useableItems",
+          "match": "\\b(?i:bfg10k|blaster|chaingun|grenade launcher|hyperblaster|machinegun|railgun|rocket launcher|shotgun|super shotgun|bullets|cells|grenades|rockets|slugs|shells|grapple|power shield|tech|invulnerability|quad damage)\\b"
+        }
+      ]
+    },
+    "commands": {
+      "patterns": [
+        {
+          "name": "support.function.q2config.commands.actions.vanilla",
+          "match": "[+-](attack|back|forward|klook|left|lookdown|lookup|mlook|movedown|moveleft|moveright|moveup|right|speed|strafe|use)\\b"
+        },
+        {
+          "name": "support.function.q2config.commands.functions.q2pro",
+          "match": "\\b(aashot|addban|addblackhole|addcvarban|addfiltercmd|addgtvban|addgtvhost|addlrconcmd|addstuffcmd|adduserinfoban|alias|bind|cmd|complete|condump|connect|dec|delban|delblackhole|delcvarban|delfiltercmd|delgtvban|delgtvhost|dellrconcmd|delstuffcmd|deluserinfoban|demo|demomap|dir|dns|download|draw|drop|dumpents|dumplayout|dumpstatusbar|dumpuser|echo|_echo|exec|fdir|followip|gamemap|give|gun_model|if|ignorenick|ignoretext|impulse|inc|kick|kickban|link|liststuffcmds|loc|loc_add|loc_update|map|mvdchannels|mvdconnect|mvdisconnect|mvdkill|mvdplay|mvdrecord|mvdseek|mvdskip|mvdstuff|ogg|pickclient|play|printall|pushmenu|rcon|record|recycle|remotemode|reset|say|say_team|screenshot|screenshotjpg|screenshotpng|screenshottga|seek|serverstatus|set|seta|setmaster|sets|setu|sky|softlink|softunlink|strings|stuff|stuffall|stuffcvar|sv|text|timerefresh|toggle|trigger|unalias|unbind|undraw|unignorenick|unignoretext|unlink|untrigger|use|wait|wave|weapnext|weapprev|whereis|writeconfig)\\b\\s"
+        },
+        {
+          "name": "support.function.q2config.commands.operations.q2pro",
+          "match": "\\b(aadump|bindlist|bsplist|centerview|checkcvarbans|clear|clearchathud|clearnotify|cmdlist|cvarlist|disconnect|dumpclients|forcemenuoff|fs_restart|fs_stats|god|gun_next|gun_prev|heartbeat|imagelist|info|in_restart|invdrop|inven|invnext|invprev|invuse|kill|killserver|lag|lasterror|listbans|listblackholes|listcvarbans|listfiltercmds|listgtvbans|listgtvhosts|listlrconcmds|listmasters|listuserinfobans|loc_delete|loc_write|macrolist|messagemode|messagemode2|modellist|mvdpause|mvdservers|mvdspawn|mvdstop|net_restart|net_stats|noclip|notarget|passive|path|pause|pingservers|popmenu|prog|quit|reconnect|resetall|resume|r_reload|serverinfo|showip|sizedown|sizeup|skins|snd_restart|soundinfo|soundlist|status|stop|stopsound|suspend|togglechat2|toggleconsole|unbindall|userinfo|vid_restart|viewpos|z_stats)\\b"
+        },
+        {
+          "name": "support.function.q2config.commands.operations.openffa",
+          "match": "\\b(menu|join|observe|chase|settings|oldscore|vote|stats|players|highscores|id|commands|listip|writeip|reset|maplist|mapqueue|players|highscores|muteall|unmuteall|bans|acommands|ready|unready|notready|noready|allready|forceready|readyall|unreadyall|allnotready|notreadyall)\\b"
+        },
+        {
+          "name": "support.function.q2config.commands.functions.openffa",
+          "match": "\\b(addip|removeip|nextmap|stats|admin|mute|unmute|ban|unban|kick|kickban)\\b\\s"
+        },
+        {
+          "name": "support.function.q2config.commands.unsorted.opentdm",
+          "match": "\\b(accept|accuracy|acommands|addip|admin|allready|applysettings|ban|bans|bfg|boot|bottomshots|break|calltime|captain|captains|changemap|chase|chat|commands|ctfmenu|ctime|damage|deathstats|details|drop|eskin|forceready|forceteam|ghost|give|god|help|hold|id|ident|invdrop|inven|invite|invnext|invnextp|invnextw|invprev|invprevp|invprevw|invuse|itemlist|items|join|kick|kickban|kickplayer|kill|kills|killstats|lastaccuracy|lastdamage|lastdeathstats|lastitems|lastkills|lastkillstats|lastscore|lastscores|laststats|lastteamaccuracy|lastteamdamage|lastteamdeathstats|lastteamitems|lastteamkills|lastteamkillstats|lastteamstats|lastteamweapons|lastweapons|listip|lock|lockteam|matchinfo|menu|motd|mute|no|noclip|noready|notarget|notready|notreadyall|notreadyteam|obs|observer|obsmode|oldaccuracy|olddamage|olddeathstats|olditems|oldkills|oldkillstats|oldscore|oldscores|oldstats|oldteamaccuracy|oldteamdamage|oldteamdeathstats|oldteamitems|oldteamkills|oldteamkillstats|oldteamstats|oldteamweapons|oldweapons|ot|overtime|pick|pickplayer|playerlist|players|powerups|putaway|ready|readyall|readyteam|recover|referee|remove|removeip|removeplayer|restore|savedefaults|say|say_team|score|settings|shuffle|spec|specinvite|speclock|spectate|startcountdown|startmatch|stats|steam|stopsound|talk|team|teamaccuracy|teambottomshots|teamdamage|teamdeathstats|teamitems|teamkills|teamkillstats|teamname|teamnotready|teamready|teamskin|teamstats|teamtopshots|teamweapons|tiemode|time|tl|topshots|tskin|unban|unlock|unlockteam|unmute|unready|unreadyall|use|vote|wave|weaplast|weapnext|weapons|weapprev|win|writeip|yes)\\b"
+        },
+        {
+          "name": "support.function.q2config.commands.unsorted.yamagi-quake2",
+          "match": "\\b(cycleweap|prefweap|gamemode|listentities|viewpos|teleport|spawnentity|spawnonstart|listmaps|vstr|playermodels|dec|inc|reset|resetall|toggle)\\b"
+        },
+        {
+          "name": "support.function.q2config.commands.unsorted.yamagi-ctf",
+          "match": "\\b(addip|admin|boot|drop|ghost|give|god|help|id|invdrop|inven|invnext|invnextp|invnextw|invprev|invprevp|invprevw|invuse|kill|listip|no|noclip|notarget|notready|observer|playerlist|players|putaway|ready|removeip|say|say_team|score|stats|steam|team|test|use|warp|wave|weaplast|weapnext|weapprev|writeip|yes)\\b"
+        },
+        {
+          "name": "support.function.q2config.commands.unsorted.yamagi-3zb2",
+          "match": "\\b(addip|air|autozoom|drop|dsp|give|god|help|id|invdrop|inven|invnext|invnextp|invnextw|invprev|invprevp|invprevw|invuse|kill|listip|noclip|notarget|players|putaway|removeip|rmb|rspb|savechain|say|say_team|score|spb|team|test|undo|use|wave|weaplast|weapnext|weapprev|writeip|zoomin|zoomout)\\b"
+        },
+        {
+          "name": "support.function.q2config.commands.functions.vanilla",
+          "match": "\\b(alias|bind|changing|cmd|condump|connect|demomap|dir|download|drop|echo|error|exec|gamemap|give|gun_model|impulse|kick|link|load|map|play|rcon|record|save|say|say_team|serverrecord|set|setenv|setmaster|sky|sv|timerefresh|unbind|use|wave)\\b\\s"
+        },
+        {
+          "name": "support.function.q2config.commands.operations.vanilla",
+          "match": "\\b(bindlist|centerview|clear|cmdlist|cvarlist|disconnect|gl_strings|god|gun_next|gun_prev|heartbeat|help|imagelist|info|invdrop|inven|invnext|invnextp|invnextw|invprev|invprevp|invprevw|invuse|joy_advancedupdate|kill|killserver|loading|menu_addressbook|menu_credits|menu_dmoptions|menu_downloadoptions|menu_game|menu_joinserver|menu_keys|menu_loadgame|menu_main|menu_multiplayer|menu_options|menu_playerconfig|menu_quit|menu_savegame|menu_startserver|menu_video|messagemode|messagemode2|modellist|noclip|notarget|path|pause|pingservers|playerlist|players|precache|prog|quit|reconnect|score|screenshot|serverinfo|serverstop|sizedown|sizeup|skins|snd_restart|soundinfo|soundlist|status|stop|stopsound|togglechat|toggleconsole|unbindall|userinfo|vid_front|vid_restart|viewpos|wait|weaplast|weapnext|weapprev|z_stats)\\b"
+        },
+        {
+          "name": "support.function.q2config.commands.actions.q2enhanced",
+          "match": "[+-](attack|back|forward|holster|klook|left|lookdown|lookup|movedown|moveleft|moveright|moveup|pushtotalk|right|speed|strafe|use|wheel|wheel2)\\b"
+        },
+        {
+          "name": "support.function.q2config.commands.unsorted.q2enhanced",
+          "match": "\\b(addbot|alias|autodemo|autosave|autosave2|bind|bindlist|bot_reloadsettings|bot_stuffcmd|bugit|cd|centerview|changing|cl_weapnext|cl_weapprev|clear|cmd|cmdlist|condump|connect|cvarlist|delete|demomap|devmap|dir|disconnect|download|drop|dumppicatlas|dumpuser|dumpvkmemory|dxgi_listadapters|echo|endgame|error|exec|find|fog|gamemap|give|god|gun_model|gun_next|gun_prev|heartbeat|heightfog|help|impulse|info|invdrop|inven|invnext|invprev|invuse|kexmultiplayer|kick|kickbot|kill|killserver|link|listRuntimeClasses|listbinds|listcmds|listjoysticks|listresolutions|listtextures|listvars|load|loadAllDX11Shaders|loadAllVKShaders|loading|map|menu_loadgame|menu_main|messagemode|messagemode2|modellist|nav_reset|nav_save|noclip|notarget|path|pause|pingservers|play|playfab_resettos|playfab_shutdown|precache|printquakeimages|printvkdescriptorsets|prog|quit|rcon|reconnect|record|reloadshaders|restart|restart_level|save|save2|say|say_team|screenshot|serverinfo|serverrecord|serverstop|set|seta|setenv|skins|sky|snd_restart|soundinfo|soundlist|stat|status|steam|stop|stopsound|sv|terminate|testerror|timerefresh|toggle|togglechat|toggleconsole|togglemenu|unbind|unbindall|unbindkey|use|use_index|userinfo|vibrate|viewpos|wait|wave|weapnext|weapprev|writeuserconfig|z_stats)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.q2config",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.q2config",
+          "match": "\\\\."
+        },
+        {
+          "include": "#numbers"
+        },
+        {
+          "include": "#keyboard-keys"
+        },
+        {
+          "include": "#commands"
+        },
+        {
+          "include": "#cvars"
+        },
+        {
+          "include": "#special-symbols"
+        },
+        {
+          "include": "#useable-items"
+        }
+      ]
+    },
+    "strings-single": {
+      "name": "string.quoted.single.q2config",
+      "begin": "\\'",
+      "end": "\\'",
+      "patterns": [
+        {
+          "name": "constant.character.escape.q2config",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.q2config",
+          "match": "(?<=(\\s|\"))-?([0-9]*[.])?[0-9]+(?=(\\s|\"))"
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.block.q2pro",
+          "begin": "(/\\*)(?:\\s*((@)internal)(?=\\s|(\\*/)))?",
+          "beginCaptures": {
+            "1": {
+              "name": "punctuation.definition.comment.q2config"
+            },
+            "2": {
+              "name": "storage.type.internaldeclaration.q2config"
+            },
+            "3": {
+              "name": "punctuation.decorator.internaldeclaration.q2config"
+            }
+          },
+          "end": "\\*/",
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.q2config"
+            }
+          }
+        },
+        {
+          "begin": "(^[ \\t]+)?((//)(?:\\s*((@)internal)(?=\\s|$))?)",
+          "beginCaptures": {
+            "1": {
+              "name": "punctuation.whitespace.comment.leading.q2config"
+            },
+            "2": {
+              "name": "comment.line.double-slash.q2config"
+            },
+            "3": {
+              "name": "punctuation.definition.comment.q2config"
+            },
+            "4": {
+              "name": "storage.type.internaldeclaration.q2config"
+            },
+            "5": {
+              "name": "punctuation.decorator.internaldeclaration.q2config"
+            }
+          },
+          "end": "(?=$)",
+          "contentName": "comment.line.double-slash.q2config"
+        }
+      ]
+    }
+  }
+}

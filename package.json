@@ -1,0 +1,68 @@
+{
+  "preview": false,
+  "name": "quake2-config-syntax",
+  "displayName": "Quake II Syntax Highlighting",
+  "description": "Syntax highlighting for Quake 2 configuration files",
+  "version": "0.1.14",
+  "icon": "logo/icon256_q2cfg.png",
+  "license": "GPL-3.0",
+  "publisher": "amokmen",
+  "repository": "https://github.com/amokmen/quake2-config-syntax",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "extensionDependencies": [
+    "amokmen.quake2-config-theme-dark"
+  ],
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "q2config",
+        "extensions": [
+          ".cfg"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "q2config",
+        "scopeName": "source.q2config",
+        "path": "./syntaxes/q2config.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "q2config",
+        "path": "./snippets.json"
+      }
+    ]
+  },
+  "keywords": [
+    "quake",
+    "quake2",
+    "quake II",
+    "game",
+    "q2pro",
+    "opentdm",
+    "openffa",
+    "ctf",
+    "3zb2",
+    "q2enhanced"
+  ],
+  "scripts": {
+    "listFilesForPublication": "npx vsce ls",
+    "listCurrentLoggedPublishers": "npx vsce ls-publishers",
+    "addPublisher": "npx vsce login amokmen",
+    "publishExtension": "npx vsce publish",
+    "unpublishExtension": "npx vsce unpublish",
+    "packageExtension": "rm -rf ./build && mkdir build && npx vsce package --out ./build --target win32-x64"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.18.0"
+  }
+}

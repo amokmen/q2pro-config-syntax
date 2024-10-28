@@ -1,0 +1,57 @@
+{
+  "Double jump": {
+    "scope": "source.q2config",
+    "prefix": "dj",
+    "body": [
+      "// IMPORTANT! 'wait' command is CPU depended!",
+      "// It would produce DIFFERENT amount of time at different CPUs.",
+      "// Need to manually choose proper count by practicing.",
+      "// Double Jump",
+      "alias w \"wait;wait;wait\"",
+      "alias +dj \"+moveup;w;w;-moveup;w;w;+moveup\"",
+      "alias -dj \"-moveup\"",
+      "bind SPACE \"+dj\""
+    ],
+    "description": "Create double jump"
+  },
+  "Zoom with changing sensitivity": {
+    "scope": "source.q2config",
+    "prefix": "zoom",
+    "body": [
+      "// Zooming and changing sensitivity while pressing button,",
+      "after releasing button setting back normal FOV and sensitivity",
+      "set myfov \"90\"",
+      "set myzoomfov \"30\"",
+      "set mysens \"2\"",
+      "set myzoomsens \"0.8\"",
+      "alias +aim \"fov \\$myzoomfov;sensitivity \\$myzoomsens\"",
+      "alias -aim \"fov \\$myfov;sensitivity \\$mysens\"",
+      "bind MOUSE3 +aim"
+    ],
+    "description": "Zooming and changing sensitivity while pressing button, after releasing button setting back normal FOV and sensitivity"
+  },
+  "Choosing 'best' available weapon": {
+    "scope": "source.q2config",
+    "prefix": "line",
+    "body": [
+      "// Choosing 'best' available weapon in some order",
+      "// (undocumented behaviour - cycle pressing would choose 2 different 'best' weapons)",
+      "// WARNING! There is limit that blocks to write into line all weapons!",
+      "alias line \"use Machinegun;use Grenade Launcher;use Super Shotgun;use HyperBlaster;use Chaingun;use Railgun;use Rocket Launcher;play 0.wav\"",
+      "bind SHIFT \"line\""
+    ],
+    "description": "Choosing 'best' available weapon in pre-set order (undocumented behaviour - cycle pressing would choose 2 different 'best' weapons)"
+  },
+  "Fish-eye": {
+    "scope": "source.q2config",
+    "prefix": "fish",
+    "body": [
+      "// Fish-eye for wide observation",
+      "set myfov \"90\"",
+      "alias fish1 \"fov 140;bind kp_enter fish2\"",
+      "alias fish2 \"fov \\$myfov;bind kp_enter fish1\"",
+      "bind KP_ENTER \"fish1\""
+    ],
+    "description": "Fish-eye for wide observation"
+  }
+}
